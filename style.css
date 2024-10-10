@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+body {
+    font-family: sans-serif;
+    position: relative;
+}
+
+.qwitcher-grypen-regular {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1, h3 {
+    text-align: center;
+    font-weight: bold !important;
+}
+
+nav {
+    background: #a3906c;
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.navbar-brand img {
+    height: 180px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 120%;
+    color: white !important;
+}
+
+.nav-link.active {
+    background: #3f3005 !important;
+}
+
+.nav-link:hover {
+    background-color: #91846d;
+    color: white;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 800px;
+}
+
+#o-nas, #uslugi, #nasz-zespol, #pacjenci, #kontakt, footer {
+    padding: 100px 20px;
+}
+
+#o-nas, #nasz-zespol, #kontakt, footer {
+    background-color: #fcecce;
+    color: #412808;
+}
+
+#uslugi, #pacjenci {
+    background-color: #f8eeda;
+    color: #412808;
+}
+
+.ico {
+    width: 30%;
+    height: 30%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+    object-fit: cover;
+}
+
+.caption-style {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 600px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #412808;
+    border-color: #412808;
+}
+
+.btn-custom {
+    background-color: #412808 !important;
+    color: white !important;
+}
+
+.btn-custom:hover {
+    background-color: #5b3b2a !important;
+    color: white !important;
+}
+
+#kontakt {
+    text-align: center;
+}
+
+.map-container {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #412808;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.footer-divider {
+    height: 2px;
+    background: #3f3005;
+}
+
+footer a {
+    color: #412808;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
